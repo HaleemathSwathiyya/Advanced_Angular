@@ -1,0 +1,54 @@
+<!-- api-example.component.html -->
+<div class="weather-info">
+    <h2>{{ NAME }}</h2>
+    <div class="current-weather">
+      <img [src]="iconsFullyUrl?.today" alt="Current weather icon" />
+      <p>{{ description }}</p>
+      <p>Temperature: {{ temp }}°C</p>
+      <p>Pressure: {{ pressure }} hPa</p>
+      <p>Humidity: {{ humidity }}%</p>
+    </div>
+    <div class="hourly-weather">
+      <h3>Hourly Weather</h3>
+      <ul>
+        <li>
+          <img [src]="iconsFullyUrl?.now" alt="Hourly weather icon" />
+          <p>{{ data?.hourly[0].temp }}°C</p>
+        </li>
+        <li>
+          <img [src]="iconsFullyUrl?.plus1" alt="Hourly weather icon" />
+          <p>{{ data?.hourly[1].temp }}°C</p>
+        </li>
+        <li>
+          <img [src]="iconsFullyUrl?.plus2" alt="Hourly weather icon" />
+          <p>{{ data?.hourly[2].temp }}°C</p>
+        </li>
+        <li>
+          <img [src]="iconsFullyUrl?.plus3" alt="Hourly weather icon" />
+          <p>{{ data?.hourly[3].temp }}°C</p>
+        </li>
+        <li>
+          <img [src]="iconsFullyUrl?.plus4" alt="Hourly weather icon" />
+          <p>{{ data?.hourly[4].temp }}°C</p>
+        </li>
+        <li>
+          <img [src]="iconsFullyUrl?.plus5" alt="Hourly weather icon" />
+          <p>{{ data?.hourly[5].temp }}°C</p>
+        </li>
+      </ul>
+    </div>
+    <div class="daily-weather">
+      <h3>Daily Weather</h3>
+      <ul>
+        <li>
+          <img [src]="iconsFullyUrl?.tomorrow" alt="Daily weather icon" />
+          <p>{{ data?.daily[0].temp.day }}°C</p>
+        </li>
+        <li>
+          <img [src]="iconsFullyUrl?.dAT" alt="Daily weather icon" />
+          <p>{{ data?.daily[1].temp.day }}°C</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

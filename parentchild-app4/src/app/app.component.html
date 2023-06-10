@@ -1,0 +1,11 @@
+<h2>Parent Component</h2>
+
+<!-- <p>Parent Color: {{ parentColor }}</p> -->
+
+<input type="text" [(ngModel)]="entercolor" class="form-control">
+
+<input type="button" value="Change Color" (click)="changeColor()" class="btn btn-primary">
+
+<!-- <button (click)="changeColor()">Change Color</button> -->
+
+<app-child [childColor]="parentColor"></app-child>
