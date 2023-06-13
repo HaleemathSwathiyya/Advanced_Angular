@@ -1,0 +1,242 @@
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    background-image: url(/src/assets/pexels-cmonphotography-1809644.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  .main {
+    border-radius: 2rem;
+  }
+  
+  .card0 {
+    width: 94%;
+  }
+  
+  .card1 {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-image: linear-gradient(rgba(0, 191, 255, 0.2), rgba(0, 132, 255, 0.2));
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 20px 30px 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
+  }
+  
+  .card2 {
+    background-image: linear-gradient(rgba(0, 191, 255, 0.15), rgba(0, 132, 255, 0.15));
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 0px 40px 40px;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .large-font {
+    font-size: 70px;
+    font-family: Arial;
+  }
+  
+  .fa-sun-o {
+    font-size: 22px;
+  }
+  
+  input {
+    background-color: #607d8b00;
+    padding: 24px 0px 12px 0px !important;
+    width: 80%;
+    box-sizing: border-box;
+    border: none !important;
+    border-bottom: 1px solid #cfd8dc !important;
+    font-size: 16px !important;
+    color: #fff !important;
+    margin-top: 1rem;
+  }
+  
+  input:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #fff !important;
+    outline-width: 0;
+    font-weight: 400;
+  }
+  
+  ::placeholder {
+    color: #b0bec5 !important;
+    opacity: 1;
+  }
+  
+  :-ms-input-placeholder {
+    color: #b0bec5 !important;
+  }
+  
+  ::-ms-input-placeholder {
+    color: #b0bec5 !important;
+  }
+  
+  .fa-search {
+    color: #607d8b;
+    background-color: #e1f5fe;
+    font-size: 20px;
+    padding: 100px;
+    width: 20%;
+    cursor: pointer;
+    margin-left: -3rem;
+  }
+  
+  .light-text {
+    color: #ffffff;
+  }
+  
+  .change:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .line {
+    height: 1px;
+    background-color: #ffffff;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .card1 {
+      padding-left: 26px;
+    }
+  }
+  
+  .row.px-3 {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[name="location"] {
+    flex-grow: 1;
+  }
+  
+  .fa.fa-search {
+    flex-shrink: 0;
+  }
+  
+  .card-body.p-0 {
+    padding: 0;
+  }
+  
+  .weather {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .weakly-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .weakly-weather-item {
+    flex-basis: 14%;
+    text-align: center;
+    margin-bottom: 15px;
+    flex: 0 0 14.28%;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .weakly-weather-item p {
+    margin: 0;
+  }
+  
+  .weakly-weather-item i {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .link {
+    cursor: pointer;
+  }
+  
+  i.bi {
+    display: inline-block;
+    padding: 0.2em 0.3em;
+  }
+  
+  .main {
+    margin-top: 50px;
+  }
+  
+  .drop,
+  .bi-star {
+    width: 50px;
+    vertical-align: middle;
+  }
+  
+  .date {
+    display: flex;
+    margin-bottom: 5rem;
+  }
+  
+  .details {
+    margin-top: -1rem;
+  }
+  
+  .lr {
+    display: flex;
+  }
+  
+  .change,
+  .suggestion {
+    text-decoration: none;
+    line-height: .5rem;
+  }
+  
+  .suggestion:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn {
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.6px);
+    -webkit-backdrop-filter: blur(1.6px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+  }
+  
+  .btn:hover {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  .btn:focus {
+    border: none;
+    box-shadow: none;
+  }
+  
+  .bb {
+    color: #fff;
+  }
+  
+  .location {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+  

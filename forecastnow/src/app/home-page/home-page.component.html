@@ -1,0 +1,121 @@
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForecastNow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="home-page.component.css">
+  <link rel="" href="">
+</head>
+
+
+<div class="container-fluid px-1 px-sm-3 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+      <div class="card0">
+        <div class="lr">
+          <!-- card1 starts -->
+          <div class="card1 col-lg-8 col-md-7">
+            <small>forecast.now</small>
+            <div class="row px-3 mt-3 mb-3">
+              <div class="container mt-5">
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                  <div class="weather__card">
+                    <div class="d-flex flex-row justify-content-center align-items-center">
+                      <div class="p-3">
+                        <h1 class="weather__temperature">{{ weather?.main?.temp }}</h1>
+                      </div>
+                      <div class="p-3">
+                        <img
+                          class="weather__icon"
+                          [src]="'http://openweathermap.org/img/wn/' + weather?.weather[0]?.icon + '.png'"
+                          alt="Weather Icon"
+                        />
+                      </div>
+                      <div class="p-3">
+                        <h5 class="weather__date">{{ weather?.dt | date:'EEE, MMM d' }}</h5>
+                        <h3 class="weather__city">{{ weather?.name }}</h3>
+                        <span class="weather__description">{{ weather?.weather[0]?.description }}</span>
+                      </div>
+                    </div>
+  
+                    <div class="weather__status d-flex flex-row justify-content-center align-items-center mt-3">
+                      <div class="p-4 d-flex justify-content-center align-items-center">
+                        <img src="https://svgur.com/i/oHw.svg" />
+                        <span class="weather__chance-of-rain">{{ weather?.chanceOfRain }}</span>
+                      </div>
+                      <div class="p-4 d-flex justify-content-center align-items-center">
+                        <img src="https://svgur.com/i/oH_.svg" />
+                        <span class="weather__pressure">{{ weather?.pressure }}</span>
+                      </div>
+                      <div class="p-4 d-flex justify-content-center align-items-center">
+                        <img src="https://svgur.com/i/oKS.svg" />
+                        <span class="weather__wind-speed">{{ weather?.windSpeed }}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- 7 days weather -->
+            <div class="weather__forecast d-flex flex-row justify-content-center align-items-center mt-3">
+              <div *ngFor="let forecastData of forecast; index as i" class="p-4 d-flex flex-column justify-content-center align-items-center">
+                <span class="weather__day-{{ i + 1 }}">{{ forecastData?.dt_txt | date:'EEE' }}</span>
+                <img
+                  [src]="'http://openweathermap.org/img/wn/' + forecastData?.weather[0]?.icon + '.png'"
+                  class="weather__icon-{{ i + 1 }}"
+                  alt="Weather Icon"
+                />
+                <span class="weather__temperature-{{ i + 1 }}">{{ forecastData?.main?.temp }}</span>
+              </div>
+            </div>
+          </div>
+          <!-- card1 ends -->
+  
+          <!-- right side -->
+          <!-- card2 starts -->
+  
+          <div class="card2 col-lg-4 col-md-5">
+            <div class="row px-3">
+              <div class="favorites col">
+                <p class="text-center mb-5">Favorites</p>
+                <div class="drop" style="width: 5rem;">
+                  <a href="" class="light-text suggestion">Birmingham</a>
+                  <a href="" class="light-text suggestion">New York</a>
+                  <a href="" class="light-text suggestion">London</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="line my-5"></div>
+            <p class="details">Weather Today</p>
+            <div class="weather">
+              <div class="row px-3 align8">
+                <p class="light-text">Cloudy</p>
+                <p class="ml-auto weather-today weather__today-description">{{ weather?.weather[0]?.main }}</p>
+              </div>
+              <div class="row px-3">
+                <p class="light-text">Humidity</p>
+                <p class="ml-auto weather-today weather__today-humidity">{{ weather?.main?.humidity }}</p>
+              </div>
+              <div class="row px-3">
+                <p class="light-text">Wind</p>
+                <p class="ml-auto weather-today weather__today-wind">{{ weather?.wind?.speed }}</p>
+              </div>
+              <div class="row px-3">
+                <p class="light-text">Rain</p>
+                <p class="ml-auto weather-today weather__today-rain">--</p>
+              </div>
+            </div>
+            <div class="line mt-3"></div>
+          </div>
+          <!-- card2 ends -->
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html, body {
+  height: 100vh;
+  font-family: 'Numans', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://images.pexels.com/photos/989785/pexels-photo-989785.jpeg?cs=srgb&dl=snow-landscape-nature-989785.jpg&fm=jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 100px; /* Adjust the top margin value as needed */
+}
+.text-centre{
+    text-align: center;
+}
+
+.card {
+  height: 370px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Rest of the CSS code remains the same */
+
+.social_icon span{
+font-size: 45px;
+margin-left: 10px;
+color: #12b4ff;
+}
+
+.social_icon span:hover{
+color: rgb(17, 15, 15);
+cursor: pointer;
+}
+
+.card-header h3{
+color: rgb(253, 251, 251);
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #627c86;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: rgb(12, 11, 11);
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #516069;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: rgb(157, 165, 185);
+}
+
+.links{
+color: rgb(5, 5, 5);
+}
+
+.links a{
+margin-left: 4px;
+}
+.card-footer .links a {
+  color: rgb(73, 27, 19); /* Replace "red" with the desired color */
+}
+.d-flex.justify-content-center a {
+    color: rgb(73, 27, 19); /* Replace "green" with the desired color */
+  }
